@@ -2,3 +2,5 @@ notebook
 numpy
 pandas
 matplotlib
+kagglehub
+scikit-learn

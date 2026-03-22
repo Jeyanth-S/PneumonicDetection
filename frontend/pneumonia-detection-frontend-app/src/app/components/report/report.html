@@ -1,0 +1,16 @@
+<div class="card">
+  <h2>Fetch Reports</h2>
+
+  <input [(ngModel)]="patientId" placeholder="Patient ID" />
+  <button (click)="fetchReports()">Get Reports</button>
+
+  <div *ngFor="let report of reports">
+    <img [src]="'http://127.0.0.1:8000/' + report.image_path" width="200" />
+
+    <p><b>Prediction:</b> {{ report.prediction }}</p>
+    <p><b>Confidence:</b> {{ report.confidence | percent }}</p>
+    <p><b>Time:</b> {{ report.timestamp }}</p>
+
+    <hr>
+  </div>
+</div>

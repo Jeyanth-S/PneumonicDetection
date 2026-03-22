@@ -32,3 +32,16 @@ frontend/pneumonia-detection-frontend-app/__screenshots__/
 
 .DS_Store
 Thumbs.db
+
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+*.pth
+*.pt
+
+uploads/
+db.json
+*.log

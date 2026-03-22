@@ -1,0 +1,25 @@
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.report-item {
+  margin-top: 15px;
+}
+
+.report-item img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.report-item p {
+  margin: 4px 0;
+}

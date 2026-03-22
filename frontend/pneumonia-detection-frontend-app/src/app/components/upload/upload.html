@@ -1,0 +1,14 @@
+<div class="card">
+  <h2>Upload X-ray</h2>
+
+  <input [(ngModel)]="patientId" placeholder="Patient ID" />
+
+  <input type="file" (change)="onFileChange($event)" />
+
+  <button (click)="submit()">Run Diagnosis</button>
+
+  <div *ngIf="result">
+    <p><b>Prediction:</b> {{ result.prediction }}</p>
+    <p><b>Confidence:</b> {{ result.confidence | percent }}</p>
+  </div>
+</div>

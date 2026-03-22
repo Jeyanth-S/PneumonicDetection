@@ -4,8 +4,8 @@
   <input [(ngModel)]="patientId" placeholder="Patient ID" />
   <button (click)="fetchReports()">Get Reports</button>
 
-  <div *ngFor="let report of reports">
-    <img [src]="'http://127.0.0.1:8000/' + report.image_path" width="200" />
+  <div *ngFor="let report of reports" class="report-item">
+    <img [src]="'http://127.0.0.1:8000/' + report.image_path" width="220" />
 
     <p><b>Prediction:</b> {{ report.prediction }}</p>
     <p><b>Confidence:</b> {{ report.confidence | percent }}</p>

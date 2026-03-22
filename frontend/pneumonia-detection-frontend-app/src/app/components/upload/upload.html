@@ -7,7 +7,7 @@
 
   <button (click)="submit()">Run Diagnosis</button>
 
-  <div *ngIf="result">
+  <div *ngIf="result" class="result">
     <p><b>Prediction:</b> {{ result.prediction }}</p>
     <p><b>Confidence:</b> {{ result.confidence | percent }}</p>
   </div>

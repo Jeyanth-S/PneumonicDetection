@@ -19,6 +19,17 @@ export class ReportComponent {
 
   fetchReports() {
     this.api.getReport(this.patientId)
-      .subscribe((res: any) => this.reports = res);
+      .subscribe((res: any) => {
+        console.log("RAW:", res);
+
+        if (Array.isArray(res)) {
+          this.reports = res;
+        } else {
+          // 🔥 convert object → array
+          this.reports = Object.values(res);
+        }
+
+        console.log("FINAL:", this.reports);
+      });
   }
 }
